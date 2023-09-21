@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
-namespace ComposableUI.Client;
+namespace ComposableUI.DevClient;
 
 public class DownstreamApiAuthorizationMessageHandler : AuthorizationMessageHandler
 {

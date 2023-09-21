@@ -1,6 +1,6 @@
 using Microsoft.JSInterop;
 
-namespace ComposableUI.Component1
+namespace RazorClassLibrary1
 {
     // This class provides an example of how JavaScript functionality can be wrapped
     // in a .NET class for easy consumption. The associated JavaScript module is
@@ -16,7 +16,7 @@ namespace ComposableUI.Component1
         public ExampleJsInterop(IJSRuntime jsRuntime)
         {
             moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-                "import", "./_content/ComposableUI.Component1/exampleJsInterop.js").AsTask());
+                "import", "./_content/RazorClassLibrary1/exampleJsInterop.js").AsTask());
         }
 
         public async ValueTask<string> Prompt(string message)

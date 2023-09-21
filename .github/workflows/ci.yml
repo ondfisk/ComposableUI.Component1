@@ -26,11 +26,9 @@ jobs:
       - name: Build
         run: dotnet build --no-restore --configuration ${{ env.CONFIGURATION }}
       - name: Test
-        run: dotnet test --no-build --verbosity normal
-      - name: Publish
-        run: dotnet publish --no-build --no-restore --configuration ${{ env.CONFIGURATION }} --output ./publish
+        run: dotnet test --no-build --configuration ${{ env.CONFIGURATION }} --verbosity normal
       - name: Push package to GitHub packages
         if: github.ref == 'refs/heads/main'
-        run: dotnet nuget push ./publish/*.nupkg --source "github" --skip-duplicate
+        run: dotnet nuget push ./**/*.nupkg --source "https://nuget.pkg.github.com/ondfisk/index.json" --skip-duplicate
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

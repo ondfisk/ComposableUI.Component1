@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposableUI.Component1", "ComposableUI.Component1\ComposableUI.Component1.csproj", "{FA66169D-D831-42EF-819D-0893491C2EAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposableUI.Client", "ComposableUI.Client\ComposableUI.Client.csproj", "{B95BDC27-382E-496E-8895-4F012106002B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposableUI.Client", "ComposableUI.Client\ComposableUI.Client.csproj", "{B95BDC27-382E-496E-8895-4F012106002B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

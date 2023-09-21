@@ -32,6 +32,4 @@ jobs:
         run: dotnet test --no-build --configuration ${{ env.CONFIGURATION }} --verbosity normal
       - name: Push package to GitHub packages
         if: github.ref == 'refs/heads/main'
-        run: dotnet nuget push ./**/*.nupkg --source "https://nuget.pkg.github.com/ondfisk/index.json" --skip-duplicate
-        env:
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: dotnet nuget push ./**/*.nupkg --source "https://nuget.pkg.github.com/ondfisk/index.json" --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate

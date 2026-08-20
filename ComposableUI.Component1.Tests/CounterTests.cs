@@ -6,8 +6,8 @@ public class CounterTests
     public void CounterShouldIncrementWhenClicked()
     {
         // Arrange
-        using var ctx = new TestContext();
-        var cut = ctx.RenderComponent<Counter>();
+        using var ctx = new BunitContext();
+        var cut = ctx.Render<Counter>();
         var paraElm = cut.Find("p");
 
         // Act

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ComposableUI.Client/ComposableUI.Client.csproj" />
+  <Project Path="ComposableUI.Component1.Tests/ComposableUI.Component1.Tests.csproj" />
+  <Project Path="ComposableUI.Component1/ComposableUI.Component1.csproj" />
+</Solution>
